@@ -14,7 +14,7 @@ namespace APISourceWithJS.Web
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://localhost:5012")
+                .UseUrls("http://*:5012")
                 .UseStartup<Startup>()
                 .Build();
 

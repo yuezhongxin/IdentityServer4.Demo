@@ -13,7 +13,7 @@ namespace HybridServer.Web.Tests
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseUrls("http://localhost:5021")
+                .UseUrls("http://*:5021")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()

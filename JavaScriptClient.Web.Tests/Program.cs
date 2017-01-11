@@ -16,7 +16,7 @@ namespace JavaScriptClient.Web.Tests
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseUrls("http://localhost:5022")
+                .UseUrls("http://*:5022")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
