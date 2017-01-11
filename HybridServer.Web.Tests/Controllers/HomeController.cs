@@ -56,7 +56,7 @@ namespace HybridServer.Web.Tests.Controllers
 
             var client = new HttpClient();
             client.SetBearerToken(accessToken);
-            var content = await client.GetStringAsync("http://localhost:5011/values");
+            var content = await client.GetStringAsync("http://localhost:5011/identity");
 
             ViewBag.Json = JArray.Parse(content).ToString();
             return Content("json");
