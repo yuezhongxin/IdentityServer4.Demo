@@ -59,7 +59,7 @@ namespace HybridServer.Web.Tests.Controllers
             var content = await client.GetStringAsync("http://localhost:5011/identity");
 
             ViewBag.Json = JArray.Parse(content).ToString();
-            return Content("json");
+            return View("json");
         }
     }
 }
