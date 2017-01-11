@@ -21,14 +21,6 @@ namespace ImplicitServer.Web
             };
         }
 
-        public static IEnumerable<ApiResource> GetApiResources()
-        {
-            return new List<ApiResource>
-            {
-                new ApiResource("api1", "My API")
-            };
-        }
-
         // clients want to access resources (aka scopes)
         public static IEnumerable<Client> GetClients()
         {
