@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -7,27 +6,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{22BD0651-031
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3FDA3CFF-E411-4166-A98C-42E1E5B252E3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientCredentialsAndPassword.Web", "ClientCredentialsAndPassword.Web\ClientCredentialsAndPassword.Web.xproj", "{6BB34F8C-B0D7-4128-8DB9-9494591C0F94}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientCredentialsAndPassword.Web", "ClientCredentialsAndPassword.Web\ClientCredentialsAndPassword.Web.csproj", "{6BB34F8C-B0D7-4128-8DB9-9494591C0F94}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISource.Web", "APISource.Web\APISource.Web.xproj", "{F4980DEB-57D3-4C7F-ADBF-7A9F01ED94B8}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISource.Web", "APISource.Web\APISource.Web.csproj", "{F4980DEB-57D3-4C7F-ADBF-7A9F01ED94B8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientCredentialsAndPassword.Web.Tests", "ClientCredentialsAndPassword.Web.Tests\ClientCredentialsAndPassword.Web.Tests.xproj", "{6BB31592-9DC2-4BE7-8E77-8ECED21040F4}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientCredentialsAndPassword.Web.Tests", "ClientCredentialsAndPassword.Web.Tests\ClientCredentialsAndPassword.Web.Tests.csproj", "{6BB31592-9DC2-4BE7-8E77-8ECED21040F4}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServer.Web", "ImplicitServer.Web\ImplicitServer.Web.xproj", "{118DE163-7D76-488F-BB99-F494101898D1}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServer.Web", "ImplicitServer.Web\ImplicitServer.Web.csproj", "{118DE163-7D76-488F-BB99-F494101898D1}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServer.Web.Tests", "ImplicitServer.Web.Tests\ImplicitServer.Web.Tests.xproj", "{4CFB4883-9929-4814-BE22-2E19476CE4A3}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServer.Web.Tests", "ImplicitServer.Web.Tests\ImplicitServer.Web.Tests.csproj", "{4CFB4883-9929-4814-BE22-2E19476CE4A3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HybridServer.Web", "HybridServer.Web\HybridServer.Web.xproj", "{7B897EA9-D388-4A5B-8C8F-7D8FE471FD15}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HybridServer.Web", "HybridServer.Web\HybridServer.Web.csproj", "{7B897EA9-D388-4A5B-8C8F-7D8FE471FD15}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HybridServer.Web.Tests", "HybridServer.Web.Tests\HybridServer.Web.Tests.xproj", "{34A216F3-D0B2-40C7-9ABF-1C4FE4BD838F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HybridServer.Web.Tests", "HybridServer.Web.Tests\HybridServer.Web.Tests.csproj", "{34A216F3-D0B2-40C7-9ABF-1C4FE4BD838F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISourceWithHybrid.Web", "APISourceWithHybrid.Web\APISourceWithHybrid.Web.xproj", "{CEAAFEDB-A76C-4C71-8145-1D631268A2B3}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISourceWithHybrid.Web", "APISourceWithHybrid.Web\APISourceWithHybrid.Web.csproj", "{CEAAFEDB-A76C-4C71-8145-1D631268A2B3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "JavaScriptClient.Web.Tests", "JavaScriptClient.Web.Tests\JavaScriptClient.Web.Tests.xproj", "{728A838A-9684-445C-A7DB-773D701B8DD2}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "JavaScriptClient.Web.Tests", "JavaScriptClient.Web.Tests\JavaScriptClient.Web.Tests.csproj", "{728A838A-9684-445C-A7DB-773D701B8DD2}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServerWithJS.Web", "ImplicitServerWithJS.Web\ImplicitServerWithJS.Web.xproj", "{3481A8D6-3043-4D26-BC1E-CA6772516C59}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplicitServerWithJS.Web", "ImplicitServerWithJS.Web\ImplicitServerWithJS.Web.csproj", "{3481A8D6-3043-4D26-BC1E-CA6772516C59}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISourceWithJS.Web", "APISourceWithJS.Web\APISourceWithJS.Web.xproj", "{37A40AE1-1660-4C8F-B5E8-38A6BD136DC8}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "APISourceWithJS.Web", "APISourceWithJS.Web\APISourceWithJS.Web.csproj", "{37A40AE1-1660-4C8F-B5E8-38A6BD136DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
