@@ -106,27 +106,40 @@ namespace ImplicitServerWithJS.Web.Controllers
             return View(vm);
         }
 
-        /// <summary>
-        /// Show logout page
-        /// </summary>
-        [HttpGet]
-        public async Task<IActionResult> Logout(string logoutId)
-        {
-            var vm = await _account.BuildLogoutViewModelAsync(logoutId);
+		/// <summary>
+		/// Show logout page
+		/// </summary>
+		//[HttpGet]
+		//public async Task<IActionResult> Logout(string logoutId)
+		//{
+		//    var vm = await _account.BuildLogoutViewModelAsync(logoutId);
 
-            if (vm.ShowLogoutPrompt == false)
-            {
-                // no need to show prompt
-                return await Logout(vm);
-            }
+		//    if (vm.ShowLogoutPrompt == false)
+		//    {
+		//        // no need to show prompt
+		//        return await Logout(vm);
+		//    }
 
-            return View(vm);
-        }
+		//    return View(vm);
+		//}
 
-        /// <summary>
-        /// Handle logout page postback
-        /// </summary>
-        [HttpPost]
+		[HttpGet]
+		public async Task<IActionResult> Logout(string logoutId)
+		{
+			var logout = await _interaction.GetLogoutContextAsync(logoutId);
+			await HttpContext.Authentication.SignOutAsync();
+			if (logout.PostLogoutRedirectUri != null)
+			{
+				return Redirect(logout.PostLogoutRedirectUri);
+			}
+			var refererUrl = Request.Headers["Referer"].ToString();
+			return Redirect(refererUrl);
+		}
+
+		/// <summary>
+		/// Handle logout page postback
+		/// </summary>
+		[HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout(LogoutInputModel model)
         {

@@ -22,9 +22,10 @@ var config = {
     authority: "http://localhost:5003",
     client_id: "js",
     redirect_uri: "http://localhost:5022/callback.html",
+    response_type: "id_token token", //id_token requests an identity token (only identity scopes are allowed), token requests an access token (only resource scopes are allowed)
     response_type: "id_token token",
     scope:"openid profile api1",
-    post_logout_redirect_uri: "http://localhost:5022/index.html",
+    //post_logout_redirect_uri: "http://localhost:5022/index.html",
 };
 var mgr = new Oidc.UserManager(config);
 
