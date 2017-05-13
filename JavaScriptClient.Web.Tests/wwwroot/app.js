@@ -39,7 +39,7 @@ mgr.getUser().then(function (user) {
 });
 
 function login() {
-    mgr.signinRedirect();
+    mgr.signinRedirect({ state: window.location.href });
 }
 
 function api() {
