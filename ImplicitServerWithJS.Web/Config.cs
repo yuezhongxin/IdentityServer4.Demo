@@ -46,6 +46,8 @@ namespace ImplicitServerWithJS.Web
                     PostLogoutRedirectUris = { "http://localhost:5022/index.html" },
                     AllowedCorsOrigins = { "http://localhost:5022" },
 
+                    RequireConsent = false, //禁用 consent 页面确认 https://github.com/IdentityServer/IdentityServer3/issues/863
+
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
